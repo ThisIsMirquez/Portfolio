@@ -13,7 +13,7 @@ In particular I wanted to explore the following questions:
 - Breakdown of average sales value per order and customer credit limit as we expect to find higher sales from customers with a higher credit limit. 
 - List all the customers that are exceeding their maximum credit between each orders. 
 
-### Dashboard Link (PDF): 
+### Dashboard Link (PDF): https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/ClassicModel_Overview_presentation.pdf
 
 ## About the Dataset 
 This is a classic MySQL database containig the following schemas. 
