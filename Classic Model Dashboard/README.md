@@ -30,7 +30,7 @@ This is a classic MySQL database containig the following schemas.
 
 With the following relations 
 
-![ralations]()
+![ralations](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/mysql-sample-database.png)
 
 ## Questions 1 & 2
 - Load data into MySQL to define the schemas needed to perform the queries. 
@@ -106,7 +106,7 @@ on t1.ordernumber = t2.ordernumber and t1.productLine <> t2.productLine
 ```
 - We get the following table exporting in Excel 
 
-![Snap_1]()
+![Snap_1](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/bought_together.png)
 
 ## Question 4
 - First we need to group the customers in "credit limit groups". I decided to break them down as: 
@@ -144,7 +144,7 @@ group by ordernumber, customernumber, creditlimit_group
 
 - Exporting into Excel we can then get the total of sales by credit group and counting the number of orders we can calculate the average sales value per order. 
 
-![Snap_2]()
+![Snap_2](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/avg_sales_value.png)
 
 ## Question 5
 
