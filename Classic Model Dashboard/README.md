@@ -14,6 +14,9 @@ In particular I wanted to explore the following questions:
 - List all the customers that are exceeding their maximum credit between each orders. 
 
 ### Dashboard Link (PDF): https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/ClassicModel_Overview_presentation.pdf
+## Dashboard Snapshot 
+
+![snapshot](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/Pictures/snapshot.png)
 
 ## About the Dataset 
 This is a classic MySQL database containig the following schemas. 
@@ -30,7 +33,7 @@ This is a classic MySQL database containig the following schemas.
 
 With the following relations 
 
-![ralations](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/mysql-sample-database.png)
+![ralations](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/Pictures/mysql-sample-database.png)
 
 ## Questions 1 & 2
 - Load data into MySQL to define the schemas needed to perform the queries. 
@@ -106,7 +109,7 @@ on t1.ordernumber = t2.ordernumber and t1.productLine <> t2.productLine
 ```
 - We get the following table exporting in Excel 
 
-![Snap_1](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/bought_together.png)
+![Snap_1](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/Pictures/bought_together.png)
 
 ## Question 4
 - First we need to group the customers in "credit limit groups". I decided to break them down as: 
@@ -144,7 +147,7 @@ group by ordernumber, customernumber, creditlimit_group
 
 - Exporting into Excel we can then get the total of sales by credit group and counting the number of orders we can calculate the average sales value per order. 
 
-![Snap_2](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/avg_sales_value.png)
+![Snap_2](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/Pictures/avg_sales_value.png)
 
 ## Question 5
 
@@ -211,4 +214,4 @@ from main_cte
 where creditlimit - (running_total_sales - running_total_payments) < 0
 
 ```
-![Snap_3]()
+![Snap_3](https://github.com/ThisIsMirquez/Portfolio/blob/main/Classic%20Model%20Dashboard/Pictures/debtor.png)
